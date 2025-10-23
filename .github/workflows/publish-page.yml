@@ -12,8 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Pages
+        id: setup_pages
+        uses: actions/configure-pages@v5
+
       - name: Deploy docs to GitHub Pages
         uses: nicnocquee/speed-docs-github-action@v1
         with:
           content-path: "./content"
+          base-path: ${{ steps.setup_pages.outputs.base_path }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
