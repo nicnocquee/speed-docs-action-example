@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Deploy docs to GitHub Pages
-        uses: nicnocquee/speed-docs@53557332997ae158c34a8be71855f4c4b5b4b69b/apps/speed-docs-github-action
+        uses: nicnocquee/speed-docs@v1
         with:
           content-path: "./content"
           github-token: ${{ secrets.GITHUB_TOKEN }}
