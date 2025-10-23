@@ -1,0 +1,17 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy docs to GitHub Pages
+        uses: nicnocquee/speed-docs-github-action@v1
+        with:
+          content-path: "./content"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
