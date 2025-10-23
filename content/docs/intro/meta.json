@@ -1,0 +1,6 @@
+{
+  "title": "Introduction",
+  "icon": "HomeIcon",
+  "pages": ["page2", "about"],
+  "defaultOpen": true
+}

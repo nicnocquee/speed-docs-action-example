@@ -1,0 +1,6 @@
+{
+  "title": "Home",
+  "icon": "MyIcon",
+  "pages": ["intro"],
+  "defaultOpen": true
+}
